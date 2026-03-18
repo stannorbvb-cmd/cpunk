@@ -12,6 +12,11 @@ Designed for Arch Linux + Hyprland users who want a sharp, aggressive desktop th
 
 <img width="2560" height="1600" alt="screenshot-2026-01-27_21-46-28" src="https://github.com/user-attachments/assets/ebc1c9b3-6c4b-4b29-a358-e99edce3aeb5" />
 
+# Walker
+<img width="1920" height="1080" alt="screenshot-2026-03-18_23-32-46" src="https://github.com/user-attachments/assets/84a0e524-c058-4240-9575-33bad18d8ff6" />
+
+<img width="1920" height="1080" alt="screenshot-2026-03-18_23-33-11" src="https://github.com/user-attachments/assets/dfdde29f-3de8-4d83-9ba8-0f20e21468ea" />
+
 
 
 ---
