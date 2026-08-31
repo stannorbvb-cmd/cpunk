@@ -1,23 +1,50 @@
-accent = "#aaacac"
-cursor = "#ffffff"
-foreground = "#ffffff"
-background = "#040303"
-selection_foreground = "#ffffff"
-selection_background = "#aaacac"
+# CpUnk — Omarchy Quattro palette
+#
+# Steel-and-signal cyberpunk: near-black surfaces, hairline chrome in
+# #aaacac / #7f6e6e, and #F82A2A as the only colour that is allowed to shout.
+# Hue names are the industrial mapping from the original ANSI set (green and
+# blue are desaturated on purpose — this is not a neon rainbow).
 
-color0 = "#040303"
-color1 = "#F82A2A"
-color2 = "#D1D2D1"
-color3 = "#fef348"
-color4 = "#aaacac"
-color5 = "#f76e78"
-color6 = "#babbbb"
-color7 = "#F3F3F3"
-color8 = "#7f6e6e"
-color9 = "#ff7f7f"
-color10 = "#ffffff"
-color11 = "#fff9a3"
-color12 = "#d8d9d9"
-color13 = "#ffc2c7"
-color14 = "#e8e9e9"
-color15 = "#ffffff"
+mode = "dark"
+
+# Walker selected-text / Hyprland "white" stop / Warp accent.
+accent = "#aaacac"
+# Explicit in the original colors.toml; white-on-steel is the terminal look.
+selection = "#aaacac"
+# Walker @border — comments, inactive text, hairline chrome.
+muted = "#7f6e6e"
+
+# Surfaces. lighter_background is Walker's @engraved; without it Quattro
+# derived lighter_bg from color0 and UI panels collapsed into the same black.
+background = "#040303"
+dark_background = "#0a0808"
+darker_background = "#020101"
+lighter_background = "#140f0f"
+
+foreground = "#ffffff"
+dark_foreground = "#7f6e6e"
+light_foreground = "#F3F3F3"
+bright_foreground = "#ffffff"
+
+# 8-stop black/steel gradient from the original hyprland.conf, 25deg.
+# Survives `omarchy theme install` (lua is stripped); hyprland.lua below
+# adds the rotating borderangle that install cannot ship.
+hyprland_active_border = "rgb(000000) rgb(000000) rgb(000000) rgb(aaacac) rgb(000000) rgb(000000) rgb(000000) rgb(aaacac) 25deg"
+hyprland_inactive_border = "rgb(000000)"
+
+red = "#F82A2A"
+yellow = "#fef348"
+# Neovim aether base09 — integers/constants.
+orange = "#ff7f7f"
+green = "#D1D2D1"
+cyan = "#babbbb"
+blue = "#aaacac"
+magenta = "#f76e78"
+brown = "#5c2a2a"
+
+bright_red = "#ff7f7f"
+bright_yellow = "#fff9a3"
+bright_green = "#ffffff"
+bright_cyan = "#e8e9e9"
+bright_blue = "#d8d9d9"
+bright_magenta = "#ffc2c7"
