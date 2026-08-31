@@ -1,0 +1,148 @@
+# CpUnk — Omarchy shell surfaces.
+#
+# Replaces waybar.css / walker.css / wofi.css / mako.ini / swayosd.css /
+# hyprlock.conf. Tokens come from those files so the industrial look
+# survives the move to Quickshell.
+
+[bar]
+background       = "#040303"
+background-alpha = 1.0
+text             = "#ffffff"
+# Signal red — recording, updates, voxtype. Same role as color1.
+active           = "#F82A2A"
+scale-with-font  = true
+size-horizontal  = 26
+size-vertical    = 28
+
+[hyprland]
+# Solid steel for 1–2px shell chrome. The 8-stop rotating gradient stays
+# on Hyprland window borders; it is too busy on a notification card.
+active-border            = "#aaacac"
+active-border-foreground = "#ffffff"
+
+[controls]
+# Hairline chrome, almost no fill — Walker reset everything to a flat plate.
+normal-color        = "#ffffff"
+normal-fill-alpha   = 0.04
+normal-border       = "#7f6e6e"
+normal-border-width = 1
+normal-border-alpha = 0.9
+
+hover-cursor-color        = "#ffffff"
+hover-cursor-fill-alpha   = 0.08
+hover-cursor-border       = "#aaacac"
+hover-cursor-border-width = 1
+hover-cursor-border-alpha = 0.7
+
+focus-color        = "#ffffff"
+focus-fill-alpha   = 0.08
+focus-border       = "#aaacac"
+focus-border-width = 1
+focus-border-alpha = 1.0
+
+# Walker selection: 2px left hairline, dim red-black wash, white type.
+selected-color        = "#ffffff"
+selected-fill-alpha   = 0.18
+selected-border       = "#7f6e6e"
+selected-border-width = "0 0 0 2"
+selected-border-alpha = 1.0
+
+pressed-fill-alpha   = 0.22
+selection-fill-alpha = 0.35
+
+[spacing]
+# Walker padding was tight (10/8/7).
+scale = 0.95
+scale-with-font = true
+
+[font]
+base-size = 12
+
+[popups]
+background       = "#040303"
+background-alpha = 1.0
+text             = "#ffffff"
+border           = "#7f6e6e"
+border-alpha     = 1.0
+border-width     = 1
+
+[tooltip]
+background       = "#040303"
+background-alpha = 0.97
+text             = "#ffffff"
+border           = "#7f6e6e"
+border-alpha     = 1.0
+
+[notifications]
+# mako.ini: border-color=#f76e78, border-size=2, background=#040303.
+background       = "#040303"
+background-alpha = 1.0
+text             = "#ffffff"
+border           = "#f76e78"
+border-alpha     = 1.0
+border-width     = 2
+countdown        = "#F82A2A"
+
+[launcher]
+# Walker: steel names on void, selected row goes white with a left hairline.
+background                = "#040303"
+background-alpha          = 1.0
+text                      = "#aaacac"
+border                    = "#7f6e6e"
+border-alpha              = 1.0
+scrim                     = "#040303"
+scrim-alpha               = 0.5
+selected-background       = "#3a2a2a"
+selected-background-alpha = 0.6
+selected-text             = "#ffffff"
+selected-border           = "#7f6e6e"
+selected-border-alpha     = 1.0
+
+[menu]
+background                = "#040303"
+background-alpha          = 1.0
+text                      = "#aaacac"
+border                    = "#7f6e6e"
+border-alpha              = 1.0
+scrim                     = "#040303"
+scrim-alpha               = 0.5
+selected-background       = "#3a2a2a"
+selected-background-alpha = 0.6
+selected-text             = "#ffffff"
+selected-border           = "#7f6e6e"
+selected-border-alpha     = 1.0
+
+[polkit]
+background       = "#040303"
+background-alpha = 1.0
+text             = "#ffffff"
+text-error       = "#F82A2A"
+border           = "#aaacac"
+border-error     = "#F82A2A"
+border-alpha     = 1.0
+scrim            = "#040303"
+scrim-alpha      = 0.5
+accent           = "#aaacac"
+
+[lock]
+# hyprlock.conf: inner 0.66 black, outer #f76e78, placeholder white at 0.7.
+background       = "#040303"
+background-alpha = 0.66
+text             = "#ffffff"
+placeholder      = "#b3b3b3"
+text-error       = "#F82A2A"
+border           = "#f76e78"
+border-active    = "#aaacac"
+border-error     = "#F82A2A"
+border-alpha     = 1.0
+selection        = "#aaacac"
+selection-alpha  = 0.45
+
+[image-picker]
+scrim                   = "#040303"
+scrim-alpha             = 0.5
+text                    = "#ffffff"
+selected-border         = "#aaacac"
+selected-border-alpha   = 1.0
+unselected-border       = "#7f6e6e"
+unselected-border-alpha = 0.28
