@@ -1,5 +1,6 @@
 -- CpUnk Hyprland chrome. Port of the original hyprland.conf:
--- 8-stop black/steel active border, 3px gaps, square corners, rotating angle.
+-- 8-stop black/steel active border, 3px gaps, square corners, rotating angle
+-- (borderangle loop at speed 100, the Lua maximum).
 --
 -- `omarchy theme install` strips *.lua. colors.toml still carries
 -- hyprland_active_border so installed copies get the stripe, just not the spin.
@@ -42,4 +43,5 @@ hl.config({
   },
 })
 
-hl.animation({ leaf = "borderangle", enabled = true, speed = 150, bezier = "linear", style = "loop" })
+-- Original hyprland.conf used speed 150; Hyprland Lua caps speed at 100.
+hl.animation({ leaf = "borderangle", enabled = true, speed = 100, bezier = "linear", style = "loop" })
